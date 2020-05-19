@@ -4,8 +4,8 @@ let q1 = prompt('ведите обязательную статью расход
 let q2 = prompt('Во сколько обойдется?');
 
 let appData = {
-    'money' : money,
-    'timeData' : time,
+    money : money,
+    timeData : time,
     expenses : {
         q1 : q2,
     },
@@ -15,5 +15,6 @@ let appData = {
 };
 
 alert(appData.money/30);
+alert(appData.expenses.q1);
 
 
