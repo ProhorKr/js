@@ -1,20 +1,29 @@
 let money = prompt('Ваш бюджет на месяц?');
 let time = prompt('Введите дату в формате YYYY-MM-DD');
-let q1 = prompt('ведите обязательную статью расходов в этом месяце');
-let q2 = prompt('Во сколько обойдется?');
 
 let appData = {
-    money : money,
+    budget : money,
     timeData : time,
-    expenses : {
-        [q1] : q2,
-    },
+    expenses : {},
     optionalExpenses : '',
     income : [],
     savings : false
 };
 
-alert(appData.money/30);
+let a1 = prompt('Введите обязательную статью расходов в этом месяце', ''),
+    a2 = prompt('Во сколько обойдется?', ''),
+    a3 = prompt('Введите обязательную статью расходов в этом месяце', ''),
+    a4 = prompt('Во сколько обойдется?', '');
+
+appData.expenses.a1 = a2;
+appData.expenses.a3 = a4;
+
+alert(appData.budget/30);
 alert(appData.expenses.q1);
 
 
+let num = 50;
+while (num < 55){
+    console.log(num);
+    num++;
+}
